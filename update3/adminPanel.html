@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title> Admin Panel </title>
+    
+   <META name="description" content="Web Project">
+   <META name="keywords" content="clothes, clothZync, dress, dresses, shoes, heels, shirts, jeans, jumpers">
+   <META name="author" content="Aleksandar Zoric">
+   <META name="rating" content="Informational">
+   <META name="generator" content="PSPad">
+   <META charset='utf-8'>
+   <META name='robots' content='all'>
+   <META name='viewport' content='width=device-width' />
+    
+   
+   <link rel="stylesheet" href="adminPanel.css"  type="text/css">
+   
+   <script>
+    document.createElement('nav');
+    document.createElement('header');
+    document.createElement('footer');
+	
+  
+  function getLocation()
+  { 
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else
+    {
+	document.getElementById("Locationinfo").innerHTML="Geolocation is not supported by this browser.";
+	}
+  }
+  
+function showPosition(position)
+  {
+  document.getElementById("Locationinfo").innerHTML="Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;	
+  }
+  
+	 
+   </script>
+   
+  
+   <style type="text/css">
+      nav header footer {
+      display:block;}
+   
+   
+   </style>
+   
+  </head>
+  
+  <body>
+  
+  <!-- Start of Container -->
+  <div class="container">
+ 
+  <!-- Start of Header -->
+    <header class="heading">
+    
+        <h1 id="title"> ClothZync - Admin Panel </h1>
+        
+          <div> 
+            <img src="images/logo.png" alt="Logo" id="logo">
+          </div>
+          
+    </header>
+   <!-- End of Header -->
+    
+    
+    
+    
+   <!-- Start of Navigation / Menu (Mike Quirke Code, referenced below) -->
+    <nav id="menu">
+      <div class="menu-container">
+         <a href="#menu" class="menu-button" onMouseOver="document.images.nickname5.src='buttons/menuButton2.png'" onMouseOut="document.images.nickname5.src='buttons/menuButton.png'"> 
+              <img src="buttons/menuButton.png" alt="Menu Button" id="nickname5" border="0"> 
+         </a>
+            <div class="menu">
+             
+              <a href="index.html" onMouseOver="document.images.nickname1.src='buttons/homeButton2.png'" onMouseOut="document.images.nickname1.src='buttons/homeButton.png'">
+                          <IMG src="buttons/homeButton.png" alt="Home Button" id="nickname1" border="0">
+              </a>
+              
+                   
+                   <a href="about.html" onMouseOver="document.images.nickname7.src='buttons/aboutButton2.png'" onMouseOut="document.images.nickname7.src='buttons/aboutButton.png'">
+                            <IMG src="buttons/aboutButton.png" alt="About Button" id="nickname7" border="0">
+                   </a>
+                   
+                                <a href="gallery.html" onMouseOver="document.images.nickname13.src='buttons/galleryButton2.png'" onMouseOut="document.images.nickname13.src='buttons/galleryButton.png'">
+                                       <IMG src="buttons/galleryButton.png" alt="Gallery Button" id="nickname13" border="0">
+                                </a>
+                      
+             </div>
+    </div>
+   </nav>
+    <!-- End of Navigation / Menu -->
+   
+   
+   
+   
+    <!-- Start of admin image -->
+     <div class="adminImg">
+       <IMG src="images/admin.png" alt="Admin " id="adminImg" border="0" width="30%">
+     </div>
+        
+        
+  
+   <!-- End of Best admin image -->
+   
+   
+   
+   
+   
+   
+    <!-- Start of form -->
+   <div id="memberPanel">
+     
+      <!-- Start of view member -->
+            <h3 class="titles"> Basic Member Panel </h3>
+             <p class="promptHeading"> Please enter the member ID to continue: </p>
+              <h2 class="subs">View Member </h2>
+           
+          <form action="view_Member.php" method="post">
+           <fieldset>
+              <label> Member ID: </label> <input type="text" name="id"> <br>
+               <input type="submit" name="submitdetails" value="SUBMIT" />
+           </fieldset>
+           <br>
+         </form>
+        <!-- End of view member -->
+      
+      <br>
+      
+        <!-- Start of delete member -->
+         <h2 class="subs">  Delete Member </h2>
+        <form method="post" action="delete-a-member.php">
+          <fieldset>
+            <label>Member ID: </label>  <input name="CustID" type="text">  <br>
+             <input name="delete" type="submit" id="delete" value="DELETE"> 
+          </fieldset>
+        </form>
+   <!-- End of delete member -->
+       
+       
+   
+   </div>
+   <!-- End of form -->
+   
+   
+   
+   <!-- Start of Paragraph -->
+   <div id="advancedPanel">
+        <h3 class="titles"> Advanced Member Panel </h3>
+         <p class="promptHeading"> Please enter the member ID to continue: </p>
+        
+        <!-- Start of update member -->
+          <h2 class="subs">  Update Member </h2>
+           <form method=POST action="updateform.php">
+           
+           <fieldset>
+             <label>Member ID: </label> <input type="text" name="record" size="10" maxlength="10"><br /><br />  
+              <input type="submit" name="go" value="Update Member"> </form>
+           </fieldset>
+       <!-- End of update member -->
+       
+              <br>
+       
+       <!-- start of search member -->
+        <h2 class="subs"> Search Member </h2>
+       <form action="searchMember.php" method="post">
+       
+        <fieldset>
+          <label>Forename: </label> <input type="text" name="Forename"><br>    <br>
+          <input type="submit" name="submitdetails" value="Search Member" />
+        </fieldset>
+    </form>
+       
+       <!-- End of search member -->
+   
+   </div>
+      <!-- End of Paragraph -->
+      
+      
+      
+      
+      
+      
+      
+       <!-- Start of Paragraph -->
+   <div id="para">
+        <h3 class="titles"> Global Panel </h3>
+        
+        <!-- Start of update member -->
+          <h2 class="subs">  View Members </h2>
+           <form method=POST action="view_all_mem.php">
+           
+           <fieldset>
+              <input type="submit" name="go" value="View All"> </form>
+           </fieldset>
+       <!-- End of update member -->
+       
+              <br>
+       
+       <!-- start of search member -->
+        <h2 class="subs"> Search Order </h2>
+         <p class="promptHeading"> Please enter the Member ID to view that members orders: </p>
+       <form action="search_order.php" method="post">
+       
+        <fieldset>
+          <label>Member ID: </label> <input type="text" name="CustID"><br>    <br>
+          <input type="submit" name="submitdetails" value="Search Order" />
+        </fieldset>
+    </form>
+       
+       <!-- End of search member -->
+   
+   </div>
+      <!-- End of Paragraph -->
+      
+      
+      
+      
+      
+      
+       <!-- Start of Paragraph -->
+   <div id="para1">
+        <h3 class="titles"> Stock Panel</h3>
+         <p class="promptHeading"> Please enter the stock ID to which you wish to update the stock level on, and enter the amount of stock you wish to add to the current: </p>
+        
+        <!-- Start of update member -->
+          <h2 class="subs"> Stock Quantity </h2>
+           <form method=POST action="update_stock.php">
+           
+           <fieldset>
+             <label>Stock ID: </label> <input type="text" name="StockID" size="10"><br /><br />  
+              <label>Stock Level: </label> <input type="text" name="Qty" size="10"><br /><br />  
+              <input type="submit" name="submitdetails" value="Add Stock"> </form>
+           </fieldset>
+       <!-- End of update member -->
+       
+            
+       
+   
+   </div>
+      <!-- End of Paragraph -->
+   
+   
+   
+   
+   
+   
+       <!-- Start of Footer (Anne's Code used here, referenced below) -->
+   <footer>
+      <h4 id="founder"> Aleksandar Zoric </h4>
+        <h4 id="address"> ClothZync, Main Street, <br> Tralee, County Kerry </h4> 
+        
+         <form action="index.html" method="post">
+               <input type="submit" name="logindetails" value="Logout" id="logoutButton" />
+          </form>
+        
+          
+           
+          
+           
+           
+    </footer>
+         <!-- End of Footer -->
+
+    
+    </div>
+           <!-- End of Container -->
+
+  </body>
+</html>
+
+<!--
+  Unknown, 2014. icons ETC. [Online] 
+  Available at: http://icons.mysitemyway.com/legacy-icon-tags/information/page/14/
+  [Accessed 29 3 2014].
+
+  Unknown, 2014. Writing.ie. [Online] 
+  Available at: http://www.writing.ie/news/irish-bestsellers-29th-march-2014/
+  [Accessed 05 04 2014].
+
+  Anne O’ Brian,2014, Class Notes
+  Available at: College X:drive/ Web Design Computing
+  [Accessed 05 04 2014]
+
+  Mike Quirke,2013, Class Notes
+  Available at: Tralee Community College
+  [Accessed 05 04 2014]
+
+-->

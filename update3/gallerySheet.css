@@ -1,0 +1,158 @@
+/* Start of Desktop Platform */
+ body{
+   font-size:62.5%;
+   background-color:#C0C0BA;
+   font-family: Arial, Helvetica, sans-serif; 
+   }
+   
+  /* Start of Anne's Code */
+  a, a:link, a:visited, a:hover {
+    text-decoration: none;
+  }
+ 
+
+  .menu-container {
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 58%;
+  }
+ 
+  
+  .menu-container a { 
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+  
+  
+  .menu-container .menu-button {
+    display: none;
+  } 
+  /* End of Anne's code */
+   
+   .container{
+   width:60%;
+   border: solid 2px #ffffff;
+   margin-left:auto;
+   margin-right:auto;
+   height:1170px;
+   background-color:#C2C2C0;
+   border-radius:30px;
+   margin-top:1%;
+   }
+   
+   .heading{
+   border-top-left-radius:30px;
+   border-top-right-radius:30px;
+   height:5%;
+   background-color:#868682;
+   position:relative;
+   margin-top:-2.9%;
+   }
+   
+   #logo{
+   position:absolute;
+   top:1%;
+   left:-2%;
+   }
+   
+   
+   #title{
+   text-align:center;
+   font-size: 4.5em;
+   padding-top:0.7%;
+   color:#ffffff;
+   }
+   
+   #nav{
+   border:solid 2px #ffffff;
+   margin-top:5%;
+   margin-left:4%;
+   border-radius:30px;
+   background-color:#eee5cf;
+   }
+   
+   .menu{
+   border: solid 2px #ffffff;
+   border-radius:30px;
+   background-color:#C0C0BA;
+   margin-top:-0.5%;
+   text-align:center;
+   }
+   
+   .empty{
+   width:74.5%;
+   border: solid 2px #ffffff;
+   margin-left:auto;
+   margin-right:auto;
+   border-radius:30px;
+   text-align:center;
+   background-color:#C0C0BA;
+   height:22%;
+   padding-bottom:2%;
+   margin-top:2%;
+    background-image: url(images/construction.png);
+    	background-size: 100%;
+    }
+   
+   
+     #checkGallery{
+   width:67%;
+   border: solid 2px #ffffff;
+   border-radius:30px;
+   text-align:center;
+   background-color:#C0C0BA;
+   height:4%;
+   margin-left:16%;
+   margin-top:42%;
+   color:#3F3F3B;
+   font-size:1.1em;
+   }
+   
+   
+   .titles{
+   font-size:2.0em;
+   text-align:center;
+   color:#474747;
+   }
+   
+   
+   footer{
+   border-bottom-left-radius:30px;
+   border-bottom-right-radius:30px;
+   height:5%;
+   background-color:#868682;
+   margin-top:23.0%;
+   }
+   
+   p{
+   font-size:1.4em;
+   margin-left:5%;
+   margin-right:5%;
+   color:#ffffff;
+   line-height:1.5em;
+   padding-top:1%;
+   }
+   
+   #founder{
+   font-size:1.4em;
+   margin-left:5%;
+   color:#ffffff;
+   padding-top:1%;
+   }
+   
+  
+   
+   #address{
+   font-size:1.4em;
+   margin-right:5%;
+   color:#ffffff;
+   float:right;
+   margin-top:-3%;
+   }
+   
+   
+       /* End of Desktop Platform */
+   
+   

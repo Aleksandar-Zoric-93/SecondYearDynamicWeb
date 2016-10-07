@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title> Gallery </title>
+    
+   <META name="description" content="Web Project">
+   <META name="keywords" content="clothes, clothZync, dress, dresses, shoes, heels, shirts, jeans, jumpers">
+   <META name="author" content="Aleksandar Zoric">
+   <META name="rating" content="Informational">
+   <META name="generator" content="PSPad">
+   <META charset='utf-8'>
+   <META name='robots' content='all'>
+   <META name='viewport' content='width=device-width' />
+    
+   
+   <link rel="stylesheet" href="gallerySheet.css"  type="text/css">
+   
+   <script>
+    document.createElement('nav');
+    document.createElement('header');
+    document.createElement('footer');
+	
+  
+  function getLocation()
+  { 
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else
+    {
+	document.getElementById("Locationinfo").innerHTML="Geolocation is not supported by this browser.";
+	}
+  }
+  
+function showPosition(position)
+  {
+  document.getElementById("Locationinfo").innerHTML="Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;	
+  }
+  
+	 
+   </script>
+   
+  
+   <style type="text/css">
+      nav header footer {
+      display:block;}
+   
+   
+   </style>
+   
+  </head>
+  
+  <body>
+  
+  <!-- Start of Container -->
+  <div class="container">
+ 
+  <!-- Start of Header -->
+    <header class="heading">
+    
+        <h1 id="title"> Gallery ClothZync </h1>
+        
+          <div> 
+            <img src="images/logo.png" alt="Logo" id="logo">
+          </div>
+          
+    </header>
+   <!-- End of Header -->
+    
+    
+    
+    
+   <!-- Start of Navigation / Menu (Mike Quirke Code, referenced below) -->
+    <nav id="menu">
+      <div class="menu-container">
+            <div class="menu">
+             
+              <a href="index.html" onMouseOver="document.images.nickname1.src='buttons/homeButton2.png'" onMouseOut="document.images.nickname1.src='buttons/homeButton.png'">
+                          <IMG src="buttons/homeButton.png" alt="Home Button" id="nickname1" border="0">
+              </a>
+              
+                   
+                   <a href="about.html" onMouseOver="document.images.nickname6.src='buttons/aboutButton2.png'" onMouseOut="document.images.nickname6.src='buttons/aboutButton.png'">
+                            <IMG src="buttons/aboutButton.png" alt="About Button" id="nickname6" border="0">
+                   </a>
+                   
+                                <a href="gallery.html" onMouseOver="document.images.nickname12.src='buttons/galleryButton2.png'" onMouseOut="document.images.nickname12.src='buttons/galleryButton.png'">
+                                       <IMG src="buttons/galleryButton.png" alt="Gallery Button" id="nickname12" border="0">
+                                </a>
+                      
+             </div>
+    </div>
+   </nav>
+    <!-- End of Navigation / Menu -->
+   
+   
+   
+        <br> <br> <br> <br> <br>
+    <!-- Start of empty-->
+     <div class="empty">
+      
+     </div>
+   <!-- End of empty -->
+   
+   
+   
+    <!-- Start of empty -->
+     <div class="empty">
+      
+     </div>
+   <!-- End of empty -->  
+   
+   
+  
+   
+   
+   
+   
+   
+      
+
+   
+   
+   
+       <!-- Start of Footer (Anne's Code used here, referenced below) -->
+   <footer>
+      <h4 id="founder"> Aleksandar Zoric </h4>
+        <h4 id="address"> ClothZync, Main Street, <br> Tralee, County Kerry </h4> 
+        
+       
+        
+          
+           
+          
+           
+           
+    </footer>
+         <!-- End of Footer -->
+
+    
+    </div>
+           <!-- End of Container -->
+
+  </body>
+</html>

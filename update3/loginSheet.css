@@ -1,0 +1,180 @@
+ /* Start of Desktop Platform */
+ body{
+   font-size:62.5%;
+   background-color:#C0C0BA;
+   font-family: Arial, Helvetica, sans-serif; 
+   }
+   
+  /* Start of Anne's Code */
+  a, a:link, a:visited, a:hover {
+    text-decoration: none;
+  }
+ 
+
+  .menu-container {
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 58%;
+  }
+ 
+  
+  .menu-container a { 
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+  
+  .subs{
+   margin-left: -62%;
+   color:#474747; 
+  }
+ 
+  
+  .menu-container .menu-button {
+    display: none;
+  } 
+  /* End of Anne's code */
+   
+   .container{
+   width:60%;
+   border: solid 2px #ffffff;
+   margin-left:auto;
+   margin-right:auto;
+   height:850px;
+   background-color:#C2C2C0;
+   border-radius:30px;
+   margin-top:1%;
+   }
+   
+   .heading{
+   border-top-left-radius:30px;
+   border-top-right-radius:30px;
+   height:8%;
+   background-color:#868682;
+   position:relative;
+   margin-top:-2.9%;
+   }
+   
+   #logo{
+   position:absolute;
+   top:1%;
+   left:-2%;
+   }
+   
+   #title{
+   text-align:center;
+   font-size: 4.5em;
+   padding-top:0.7%;
+   color:#ffffff;
+   }
+   
+   #nav{
+   border:solid 2px #ffffff;
+   margin-top:5%;
+   margin-left:4%;
+   border-radius:30px;
+   background-color:#eee5cf;
+   }
+   
+   .menu{
+   border: solid 2px #ffffff;
+   border-radius:30px;
+   background-color:#C0C0BA;
+   margin-top:-0.5%;
+   text-align:center;
+   }
+   
+
+   
+   label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 120px;
+    text-align: left;
+    }
+    
+  input {
+   display: inline-block;
+   float: left;
+   }
+   
+   
+   .loginPanel{
+   width:32%;
+   border: solid 2px #ffffff;
+   border-radius:30px;
+   text-align:center;
+   background-color:#C0C0BA;
+   height:32%;
+   margin-left:34%;
+   margin-top:8%;
+   float:left;
+   }
+   
+   #promptOption{
+    width:90%;
+    margin-left:5%;
+   }
+   
+   .promptHeading{
+    color:#000000;
+   }
+   
+   .titles{
+   font-size:2.0em;
+   text-align:center;
+   color:#474747;
+   }
+   
+   form{
+   text-align:center;
+   font-size:1.4em;
+   }
+   
+   legend{
+   color:#3F3F3B;}
+   
+   
+   footer{
+   border-bottom-left-radius:30px;
+   border-bottom-right-radius:30px;
+   height:8%;
+   background-color:#868682;
+   margin-top:53.0%;
+   }
+   
+   p{
+   font-size:1.4em;
+   margin-left:5%;
+   margin-right:5%;
+   color:#ffffff;
+   line-height:1.5em;
+   padding-top:1%;
+   }
+   
+   #founder{
+   font-size:1.4em;
+   margin-left:5%;
+   color:#ffffff;
+   padding-top:1%;
+   }
+   
+   #loginButton{
+   margin-left:13%;
+   margin-top:1%;}
+   
+    
+   #address{
+   font-size:1.4em;
+   margin-right:5%;
+   color:#ffffff;
+   float:right;
+   margin-top:-3%;
+   }
+   
+   
+       /* End of Desktop Platform */
+   
+   
